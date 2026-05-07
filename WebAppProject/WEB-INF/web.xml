@@ -1,0 +1,41 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+  <servlet>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <servlet-class>UpdatePasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <url-pattern>/update-password</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostMessageServlet</servlet-name>
+    <servlet-class>PostMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostMessageServlet</servlet-name>
+    <url-pattern>/post-message</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>NewTopicServlet</servlet-name>
+    <servlet-class>NewTopicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewTopicServlet</servlet-name>
+    <url-pattern>/new-topic</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
